@@ -14,8 +14,6 @@ class App extends Component {
               <th className="currencyName">Name</th>
               <th>Symbol</th>
               <th>Price</th>
-              <th className="hourlyChange">Change Last HR</th>
-              <th className="dailyChange">Change Last 24HR</th>
             </tr>
             <CryptoMarket />
           </tbody>
