@@ -16,6 +16,8 @@ class Cryptos extends Component {
         <td>{this.props.name}</td>
         <td>{this.props.symbol}</td>
         <td className="price">{this.props.price}</td>
+        <td>{this.props.change1h}%</td>
+        <td>{this.props.change24h}%</td>
       </tr>
     )
   }

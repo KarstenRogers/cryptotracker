@@ -20,7 +20,7 @@ class CryptoMarket extends Component {
           })
           console.log(cryptoData.data)
         })
-    }, 50000)
+    }, 5000)
   }
 
   render() {
@@ -31,6 +31,8 @@ class CryptoMarket extends Component {
           icon={coin.id}
           symbol={coin.symbol}
           price={coin.quotes.USD.price.toFixed(2)}
+          change1h={coin.quotes.USD.percent_change_1h}
+          change24h={coin.quotes.USD.percent_change_24h}
           key={idx}
         />
       )
